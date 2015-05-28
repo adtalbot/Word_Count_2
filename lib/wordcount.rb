@@ -3,7 +3,6 @@ class String
 
     entered_word = entered_word.downcase
     entered_word = entered_word.gsub(/[!?@#$%^&*]/,"")
-    binding.pry
     sentence = self.gsub(/[!?@#$%^&*]/,"")
     frequency = 0
 
@@ -15,11 +14,8 @@ class String
       if word.eql?(entered_word)
         frequency = frequency + 1
         end
-
       end
-
     frequency
-
     end
   end
 end
